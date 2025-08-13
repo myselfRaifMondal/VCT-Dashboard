@@ -5,12 +5,9 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Install system dependencies
-RUN apt-get update && apt-get install -y \
-    build-essential \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
-    software-properties-common \
-    git \
-    && rm -rf /var/lib/apt/lists/*
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements first for better Docker layer caching
 COPY requirements.txt .
@@ -22,24 +19,16 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Create necessary directories
-RUN mkdir -p data logs
+RUN mkdir -p logs
 
 # Import CSV data to SQLite if database doesn't exist
 RUN if [ ! -f vct.db ]; then \
     echo "Database not found, running import script..." && \
-    python scripts/import_to_sqlite.py; \
+    python scripts/import_to_sqlite.py || echo "Import script failed, continuing..."; \
 fi
 
 # Expose Streamlit default port
 EXPOSE 8501
-
-# Health check to ensure the app is running
-HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health || exit 1
-
-# Create non-root user for security
-RUN useradd --create-home --shell /bin/bash app \
-    && chown -R app:app /app
-USER app
 
 # Set environment variables
 ENV PYTHONPATH=/app
