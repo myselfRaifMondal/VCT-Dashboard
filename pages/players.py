@@ -17,9 +17,9 @@ def show(year: int):
 
     # Validate required columns
     required_cols = {
-        "Player name": ["Player", "player", "player_name", "Player Name"],
-        "Combat score": ["Average Combat Score", "ACS", "Rating", "average_combat_score", "Average Combat Score (ACS)"],
-        "Team name": ["Team", "Teams", "team", "team_name"]
+        "Player name": ["player", "Player", "player_name", "Player Name"],
+        "Combat score": ["average_combat_score", "rating", "Average Combat Score", "ACS", "Rating", "Average Combat Score (ACS)"],
+        "Team name": ["teams", "Team", "Teams", "team", "team_name"]
     }
     
     missing = validate_required_columns(stats, required_cols)
@@ -103,19 +103,19 @@ def show(year: int):
                 st.metric("Teams Played For", teams)
                 
         with col4:
-            # Try to find KD ratio or kills/deaths
-            kd_cols = ["KD", "K/D", "Kills:Deaths", "kd_ratio"]
-            kd_col = find_column(player_data, kd_cols)
-            if kd_col:
-                avg_kd = player_data[kd_col].mean() if pd.api.types.is_numeric_dtype(player_data[kd_col]) else "N/A"
-                st.metric("Avg K/D", f"{avg_kd:.2f}" if avg_kd != "N/A" else "N/A")
+            # Use the actual kills_deaths column from database
+            if "kills_deaths" in player_data.columns:
+                avg_kd = player_data["kills_deaths"].mean()
+                st.metric("Avg K/D", f"{avg_kd:.2f}")
+            else:
+                st.metric("Avg K/D", "N/A")
 
         # Performance over time
         if acs_col and len(player_data) > 1:
             st.subheader("📈 Performance Trend")
             
             # Try to find a match identifier or date column
-            match_cols = ["Match ID", "Match Name", "match_id", "Tournament", "Stage"]
+            match_cols = ["tournament", "stage", "match_type", "Match ID", "Match Name", "match_id"]
             match_col = find_column(player_data, match_cols)
             
             if match_col:
@@ -149,12 +149,15 @@ def show(year: int):
         if team_col: display_cols.append(team_col)
         if acs_col: display_cols.append(acs_col)
         
-        # Add other interesting columns
-        interesting_cols = ["Rating", "Kills", "Deaths", "Assists", "Headshot %", "First Kills", "First Deaths"]
+        # Add other interesting columns based on actual database schema
+        interesting_cols = [
+            "rating", "kills_deaths", "kill_assist_trade_survive", "average_damage_per_round",
+            "kills_per_round", "assists_per_round", "first_kills_per_round", "first_deaths_per_round",
+            "headshot", "clutch_success", "kills", "deaths", "assists", "first_kills", "first_deaths"
+        ]
         for col in interesting_cols:
-            found_col = find_column(player_data, [col, col.lower(), col.replace(' ', '_')])
-            if found_col and found_col not in display_cols:
-                display_cols.append(found_col)
+            if col in player_data.columns and col not in display_cols:
+                display_cols.append(col)
         
         # Limit to first 10 columns to avoid overwhelming display
         display_cols = display_cols[:10]
