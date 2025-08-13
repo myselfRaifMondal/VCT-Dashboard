@@ -1,0 +1,51 @@
+{
+  "name": "VCT Dashboard",
+  "description": "VALORANT Champions Tour Analytics Dashboard with interactive charts and statistics",
+  "repository": "https://github.com/YOUR_USERNAME/VCT-Dashboard",
+  "logo": "https://raw.githubusercontent.com/YOUR_USERNAME/VCT-Dashboard/main/assets/logo.png",
+  "keywords": ["valorant", "esports", "analytics", "dashboard", "streamlit", "python"],
+  "website": "https://your-vct-dashboard.herokuapp.com/",
+  "stack": "container",
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "addons": [],
+  "env": {
+    "PYTHONPATH": {
+      "description": "Python path for the application",
+      "value": "/app"
+    },
+    "STREAMLIT_SERVER_HEADLESS": {
+      "description": "Run Streamlit in headless mode",
+      "value": "true"
+    },
+    "STREAMLIT_BROWSER_GATHER_USAGE_STATS": {
+      "description": "Disable Streamlit usage stats collection",
+      "value": "false"
+    },
+    "STREAMLIT_SERVER_ENABLE_CORS": {
+      "description": "Disable CORS for Heroku deployment",
+      "value": "false"
+    },
+    "STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION": {
+      "description": "Disable XSRF protection for Heroku",
+      "value": "false"
+    }
+  },
+  "buildpacks": [],
+  "scripts": {
+    "postdeploy": "python scripts/import_to_sqlite.py"
+  },
+  "success_url": "/",
+  "environments": {
+    "test": {
+      "addons": []
+    },
+    "review": {
+      "addons": []
+    }
+  }
+}

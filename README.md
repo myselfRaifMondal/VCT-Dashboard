@@ -2,6 +2,12 @@
 
 A comprehensive Streamlit dashboard for analyzing VALORANT Champions Tour (VCT) data, featuring tournament statistics, agent meta analysis, match insights, and player performance tracking.
 
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://hub.docker.com/r/YOUR_USERNAME/vct-dashboard)
+[![CI/CD](https://github.com/YOUR_USERNAME/VCT-Dashboard/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/YOUR_USERNAME/VCT-Dashboard/actions)
+
+🚀 **NEW**: Now with SQLite database backend, Docker containerization, and cloud deployment support!
+
 ## ✨ Features
 
 ### 🏆 Overview Page
@@ -172,19 +178,91 @@ VCT-Dashboard/
 3. Implement data loading with column auto-detection
 4. Follow existing error handling patterns
 
-## 🚀 Deployment
+## 📊 Database & Performance
 
-### Streamlit Cloud
+### SQLite Database Backend
+The dashboard now uses SQLite for better performance and easier deployment:
+
+```bash
+# Import CSV data to SQLite database
+python scripts/import_to_sqlite.py
+
+# Verify database structure
+python scripts/verify_database.py
+
+# Import large files (if needed)
+python scripts/import_large_files.py
+```
+
+**Database Features:**
+- 📁 Imports from `data/` directory and all `vct_*` subfolders
+- 🔄 Automatic schema inference and data type detection
+- 📊 111+ tables with 364,810+ rows of VCT data
+- 📈 Optimized indexes for fast queries
+- 🛡️ Error handling for encoding and format issues
+- 🔍 Seamless fallback to CSV files if database unavailable
+
+## 🚀 Deployment Options
+
+### 1. 🐳 Docker (Recommended)
+```bash
+# Build and run with Docker
+docker build -t vct-dashboard .
+docker run -p 8501:8501 vct-dashboard
+
+# Or use Docker Compose
+docker-compose up --build
+
+# Run with database admin interface
+docker-compose --profile admin up
+```
+
+### 2. ☁️ Heroku (One-Click)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+Or manually:
+```bash
+heroku create your-vct-dashboard
+heroku stack:set container
+git push heroku main
+```
+
+### 3. 🌐 AWS ECS (Production)
+```bash
+cd terraform
+terraform init
+terraform plan
+terraform apply
+```
+
+### 4. 🌩️ Streamlit Cloud
 1. Push code to GitHub repository
 2. Connect to Streamlit Cloud
-3. Ensure data files are included or use external data sources
-4. Configure environment variables if needed
+3. Database will be automatically created from CSV files
 
-### Local Deployment
+### 5. 💻 Local Development
 ```bash
+# Development mode
+streamlit run app.py
+
 # Production mode
 streamlit run app.py --server.port 8501 --server.address 0.0.0.0
 ```
+
+## 🔄 CI/CD Pipeline
+
+Automatic deployment with GitHub Actions:
+- ✅ Automated testing and database verification
+- 🐳 Multi-platform Docker image builds
+- 📦 Docker Hub image publishing
+- 🚀 Automatic Heroku deployment
+- 🔐 Security scanning with Trivy
+- ☁️ Optional AWS ECS deployment
+
+**Setup:**
+1. Add GitHub secrets for Docker Hub and Heroku
+2. Push to `main` branch triggers full deployment
+3. Pull requests trigger testing and validation
 
 ## 🐛 Troubleshooting
 

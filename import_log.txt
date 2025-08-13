@@ -1,0 +1,228 @@
+2025-08-13 08:23:51,785 - INFO - Working directory: /Users/raifsalauddinmondal/Documents/GitHub/VCT-Dashboard
+2025-08-13 08:23:51,785 - INFO - Starting VCT data import process...
+2025-08-13 08:23:51,785 - INFO - Connected to database: vct.db
+2025-08-13 08:23:51,788 - INFO - Found 110 CSV files
+2025-08-13 08:23:51,788 - INFO - Processing: data/all_ids/all_matches_games_ids.csv
+2025-08-13 08:23:51,909 - ERROR - Error importing data/all_ids/all_matches_games_ids.csv: too many SQL variables
+2025-08-13 08:23:51,913 - INFO - Processing: data/all_ids/all_players_ids.csv
+2025-08-13 08:23:51,940 - INFO - ✅ Imported all_ids_all_players_ids: 15520 rows, 2 columns
+2025-08-13 08:23:51,940 - INFO - Processing: data/all_ids/all_teams_ids.csv
+2025-08-13 08:23:51,950 - INFO - ✅ Imported all_ids_all_teams_ids: 4004 rows, 2 columns
+2025-08-13 08:23:51,950 - INFO - Processing: data/all_ids/all_teams_mapping.csv
+2025-08-13 08:23:51,960 - INFO - ✅ Imported all_ids_all_teams_mapping: 3502 rows, 2 columns
+2025-08-13 08:23:51,960 - INFO - Processing: data/all_ids/all_tournaments_stages_match_types_ids.csv
+2025-08-13 08:23:51,979 - INFO - ✅ Imported all_ids_all_tournaments_stages_match_types_ids: 3188 rows, 7 columns
+2025-08-13 08:23:51,979 - INFO - Processing: data/vct_2021/agents/agents_pick_rates.csv
+2025-08-13 08:23:52,428 - ERROR - Error importing data/vct_2021/agents/agents_pick_rates.csv: too many SQL variables
+2025-08-13 08:23:52,442 - INFO - Processing: data/vct_2021/agents/maps_stats.csv
+2025-08-13 08:23:52,485 - INFO - ✅ Imported vct_2021_agents_maps_stats: 8005 rows, 7 columns
+2025-08-13 08:23:52,485 - INFO - Processing: data/vct_2021/agents/teams_picked_agents.csv
+2025-08-13 08:23:53,138 - ERROR - Error importing data/vct_2021/agents/teams_picked_agents.csv: too many SQL variables
+2025-08-13 08:23:53,156 - INFO - Processing: data/vct_2021/ids/players_ids.csv
+2025-08-13 08:23:53,180 - INFO - ✅ Imported vct_2021_ids_players_ids: 11190 rows, 2 columns
+2025-08-13 08:23:53,180 - INFO - Processing: data/vct_2021/ids/teams_ids.csv
+2025-08-13 08:23:53,188 - INFO - ✅ Imported vct_2021_ids_teams_ids: 2741 rows, 2 columns
+2025-08-13 08:23:53,188 - INFO - Processing: data/vct_2021/ids/tournaments_stages_match_types_ids.csv
+2025-08-13 08:23:53,199 - INFO - ✅ Imported vct_2021_ids_tournaments_stages_match_types_ids: 1777 rows, 6 columns
+2025-08-13 08:23:53,199 - INFO - Processing: data/vct_2021/ids/tournaments_stages_matches_games_ids.csv
+2025-08-13 08:23:53,298 - INFO - ✅ Imported vct_2021_ids_tournaments_stages_matches_games_ids: 14489 rows, 9 columns
+2025-08-13 08:23:53,298 - INFO - Processing: data/vct_2021/matches/draft_phase.csv
+2025-08-13 08:23:53,326 - INFO - ✅ Imported vct_2021_matches_draft_phase: 3378 rows, 7 columns
+2025-08-13 08:23:53,326 - INFO - Processing: data/vct_2021/matches/eco_rounds.csv
+2025-08-13 08:23:54,724 - ERROR - Error importing data/vct_2021/matches/eco_rounds.csv: too many SQL variables
+2025-08-13 08:23:54,761 - INFO - Processing: data/vct_2021/matches/eco_stats.csv
+2025-08-13 08:23:55,199 - ERROR - Error importing data/vct_2021/matches/eco_stats.csv: too many SQL variables
+2025-08-13 08:23:55,213 - INFO - Processing: data/vct_2021/matches/kills.csv
+2025-08-13 08:23:59,396 - ERROR - Error importing data/vct_2021/matches/kills.csv: too many SQL variables
+2025-08-13 08:23:59,544 - INFO - Processing: data/vct_2021/matches/kills_stats.csv
+2025-08-13 08:24:00,255 - ERROR - Error importing data/vct_2021/matches/kills_stats.csv: too many SQL variables
+2025-08-13 08:24:00,286 - INFO - Processing: data/vct_2021/matches/maps_played.csv
+2025-08-13 08:24:00,363 - INFO - ✅ Imported vct_2021_matches_maps_played: 14486 rows, 5 columns
+2025-08-13 08:24:00,364 - INFO - Processing: data/vct_2021/matches/maps_scores.csv
+2025-08-13 08:24:00,532 - INFO - ✅ Imported vct_2021_matches_maps_scores: 14503 rows, 16 columns
+2025-08-13 08:24:00,533 - INFO - Processing: data/vct_2021/matches/overview.csv
+2025-08-13 08:24:04,837 - ERROR - Error importing data/vct_2021/matches/overview.csv: too many SQL variables
+2025-08-13 08:24:04,981 - INFO - Processing: data/vct_2021/matches/rounds_kills.csv
+2025-08-13 08:24:08,424 - ERROR - Error importing data/vct_2021/matches/rounds_kills.csv: too many SQL variables
+2025-08-13 08:24:08,526 - INFO - Processing: data/vct_2021/matches/scores.csv
+2025-08-13 08:24:08,591 - INFO - ✅ Imported vct_2021_matches_scores: 7224 rows, 9 columns
+2025-08-13 08:24:08,591 - INFO - Processing: data/vct_2021/matches/team_mapping.csv
+2025-08-13 08:24:08,600 - INFO - ✅ Imported vct_2021_matches_team_mapping: 2377 rows, 2 columns
+2025-08-13 08:24:08,600 - INFO - Processing: data/vct_2021/matches/win_loss_methods_count.csv
+2025-08-13 08:24:08,762 - ERROR - Error importing data/vct_2021/matches/win_loss_methods_count.csv: too many SQL variables
+2025-08-13 08:24:08,765 - INFO - Processing: data/vct_2021/matches/win_loss_methods_round_number.csv
+2025-08-13 08:24:10,598 - ERROR - Error importing data/vct_2021/matches/win_loss_methods_round_number.csv: too many SQL variables
+2025-08-13 08:24:10,651 - INFO - Processing: data/vct_2021/players_stats/players_stats.csv
+2025-08-13 08:24:12,242 - ERROR - Error importing data/vct_2021/players_stats/players_stats.csv: too many SQL variables
+2025-08-13 08:24:12,292 - INFO - Processing: data/vct_2022/agents/agents_pick_rates.csv
+2025-08-13 08:24:12,618 - ERROR - Error importing data/vct_2022/agents/agents_pick_rates.csv: too many SQL variables
+2025-08-13 08:24:12,627 - INFO - Processing: data/vct_2022/agents/maps_stats.csv
+2025-08-13 08:24:12,667 - INFO - ✅ Imported vct_2022_agents_maps_stats: 5514 rows, 7 columns
+2025-08-13 08:24:12,667 - INFO - Processing: data/vct_2022/agents/teams_picked_agents.csv
+2025-08-13 08:24:13,067 - ERROR - Error importing data/vct_2022/agents/teams_picked_agents.csv: too many SQL variables
+2025-08-13 08:24:13,080 - INFO - Processing: data/vct_2022/ids/players_ids.csv
+2025-08-13 08:24:13,098 - INFO - ✅ Imported vct_2022_ids_players_ids: 7568 rows, 2 columns
+2025-08-13 08:24:13,099 - INFO - Processing: data/vct_2022/ids/teams_ids.csv
+2025-08-13 08:24:13,104 - INFO - ✅ Imported vct_2022_ids_teams_ids: 1572 rows, 2 columns
+2025-08-13 08:24:13,104 - INFO - Processing: data/vct_2022/ids/tournaments_stages_match_types_ids.csv
+2025-08-13 08:24:13,113 - INFO - ✅ Imported vct_2022_ids_tournaments_stages_match_types_ids: 1076 rows, 6 columns
+2025-08-13 08:24:13,113 - INFO - Processing: data/vct_2022/ids/tournaments_stages_matches_games_ids.csv
+2025-08-13 08:24:13,178 - INFO - ✅ Imported vct_2022_ids_tournaments_stages_matches_games_ids: 8864 rows, 9 columns
+2025-08-13 08:24:13,178 - INFO - Processing: data/vct_2022/matches/draft_phase.csv
+2025-08-13 08:24:13,226 - INFO - ✅ Imported vct_2022_matches_draft_phase: 7432 rows, 7 columns
+2025-08-13 08:24:13,226 - INFO - Processing: data/vct_2022/matches/eco_rounds.csv
+2025-08-13 08:24:14,634 - ERROR - Error importing data/vct_2022/matches/eco_rounds.csv: too many SQL variables
+2025-08-13 08:24:14,675 - INFO - Processing: data/vct_2022/matches/eco_stats.csv
+2025-08-13 08:24:15,122 - ERROR - Error importing data/vct_2022/matches/eco_stats.csv: too many SQL variables
+2025-08-13 08:24:15,135 - INFO - Processing: data/vct_2022/matches/kills.csv
+2025-08-13 08:24:19,406 - ERROR - Error importing data/vct_2022/matches/kills.csv: too many SQL variables
+2025-08-13 08:24:19,558 - INFO - Processing: data/vct_2022/matches/kills_stats.csv
+2025-08-13 08:24:20,267 - ERROR - Error importing data/vct_2022/matches/kills_stats.csv: too many SQL variables
+2025-08-13 08:24:20,300 - INFO - Processing: data/vct_2022/matches/maps_played.csv
+2025-08-13 08:24:20,348 - INFO - ✅ Imported vct_2022_matches_maps_played: 8864 rows, 5 columns
+2025-08-13 08:24:20,348 - INFO - Processing: data/vct_2022/matches/maps_scores.csv
+2025-08-13 08:24:20,449 - INFO - ✅ Imported vct_2022_matches_maps_scores: 8884 rows, 16 columns
+2025-08-13 08:24:20,449 - INFO - Processing: data/vct_2022/matches/overview.csv
+2025-08-13 08:24:23,284 - ERROR - Error importing data/vct_2022/matches/overview.csv: too many SQL variables
+2025-08-13 08:24:23,390 - INFO - Processing: data/vct_2022/matches/rounds_kills.csv
+2025-08-13 08:24:26,877 - ERROR - Error importing data/vct_2022/matches/rounds_kills.csv: too many SQL variables
+2025-08-13 08:24:26,990 - INFO - Processing: data/vct_2022/matches/scores.csv
+2025-08-13 08:24:27,029 - INFO - ✅ Imported vct_2022_matches_scores: 3842 rows, 9 columns
+2025-08-13 08:24:27,029 - INFO - Processing: data/vct_2022/matches/team_mapping.csv
+2025-08-13 08:24:27,036 - INFO - ✅ Imported vct_2022_matches_team_mapping: 1399 rows, 2 columns
+2025-08-13 08:24:27,037 - INFO - Processing: data/vct_2022/matches/win_loss_methods_count.csv
+2025-08-13 08:24:27,198 - INFO - ✅ Imported vct_2022_matches_win_loss_methods_count: 17728 rows, 14 columns
+2025-08-13 08:24:27,199 - INFO - Processing: data/vct_2022/matches/win_loss_methods_round_number.csv
+2025-08-13 08:24:28,391 - ERROR - Error importing data/vct_2022/matches/win_loss_methods_round_number.csv: too many SQL variables
+2025-08-13 08:24:28,425 - INFO - Processing: data/vct_2022/players_stats/players_stats.csv
+2025-08-13 08:24:29,518 - ERROR - Error importing data/vct_2022/players_stats/players_stats.csv: too many SQL variables
+2025-08-13 08:24:29,550 - INFO - Processing: data/vct_2023/agents/agents_pick_rates.csv
+2025-08-13 08:24:29,639 - INFO - ✅ Imported vct_2023_agents_agents_pick_rates: 17712 rows, 6 columns
+2025-08-13 08:24:29,640 - INFO - Processing: data/vct_2023/agents/maps_stats.csv
+2025-08-13 08:24:29,652 - INFO - ✅ Imported vct_2023_agents_maps_stats: 738 rows, 7 columns
+2025-08-13 08:24:29,652 - INFO - Processing: data/vct_2023/agents/teams_picked_agents.csv
+2025-08-13 08:24:29,730 - INFO - ✅ Imported vct_2023_agents_teams_picked_agents: 11751 rows, 9 columns
+2025-08-13 08:24:29,730 - INFO - Processing: data/vct_2023/ids/players_ids.csv
+2025-08-13 08:24:29,739 - INFO - ✅ Imported vct_2023_ids_players_ids: 284 rows, 2 columns
+2025-08-13 08:24:29,739 - INFO - Processing: data/vct_2023/ids/teams_ids.csv
+2025-08-13 08:24:29,743 - INFO - ✅ Imported vct_2023_ids_teams_ids: 51 rows, 2 columns
+2025-08-13 08:24:29,743 - INFO - Processing: data/vct_2023/ids/tournaments_stages_match_types_ids.csv
+2025-08-13 08:24:29,757 - INFO - ✅ Imported vct_2023_ids_tournaments_stages_match_types_ids: 137 rows, 6 columns
+2025-08-13 08:24:29,757 - INFO - Processing: data/vct_2023/ids/tournaments_stages_matches_games_ids.csv
+2025-08-13 08:24:29,769 - INFO - ✅ Imported vct_2023_ids_tournaments_stages_matches_games_ids: 830 rows, 9 columns
+2025-08-13 08:24:29,769 - INFO - Processing: data/vct_2023/matches/draft_phase.csv
+2025-08-13 08:24:29,787 - INFO - ✅ Imported vct_2023_matches_draft_phase: 1898 rows, 7 columns
+2025-08-13 08:24:29,787 - INFO - Processing: data/vct_2023/matches/eco_rounds.csv
+2025-08-13 08:24:29,951 - ERROR - Error importing data/vct_2023/matches/eco_rounds.csv: too many SQL variables
+2025-08-13 08:24:29,955 - INFO - Processing: data/vct_2023/matches/eco_stats.csv
+2025-08-13 08:24:30,034 - INFO - ✅ Imported vct_2023_matches_eco_stats: 10830 rows, 9 columns
+2025-08-13 08:24:30,034 - INFO - Processing: data/vct_2023/matches/kills.csv
+2025-08-13 08:24:30,430 - ERROR - Error importing data/vct_2023/matches/kills.csv: too many SQL variables
+2025-08-13 08:24:30,443 - INFO - Processing: data/vct_2023/matches/kills_stats.csv
+2025-08-13 08:24:30,590 - INFO - ✅ Imported vct_2023_matches_kills_stats: 10868 rows, 20 columns
+2025-08-13 08:24:30,591 - INFO - Processing: data/vct_2023/matches/maps_played.csv
+2025-08-13 08:24:30,598 - INFO - ✅ Imported vct_2023_matches_maps_played: 830 rows, 5 columns
+2025-08-13 08:24:30,599 - INFO - Processing: data/vct_2023/matches/maps_scores.csv
+2025-08-13 08:24:30,616 - INFO - ✅ Imported vct_2023_matches_maps_scores: 830 rows, 16 columns
+2025-08-13 08:24:30,616 - INFO - Processing: data/vct_2023/matches/overview.csv
+2025-08-13 08:24:30,906 - ERROR - Error importing data/vct_2023/matches/overview.csv: too many SQL variables
+2025-08-13 08:24:30,916 - INFO - Processing: data/vct_2023/matches/rounds_kills.csv
+2025-08-13 08:24:31,332 - ERROR - Error importing data/vct_2023/matches/rounds_kills.csv: too many SQL variables
+2025-08-13 08:24:31,360 - INFO - Processing: data/vct_2023/matches/scores.csv
+2025-08-13 08:24:31,379 - INFO - ✅ Imported vct_2023_matches_scores: 331 rows, 9 columns
+2025-08-13 08:24:31,380 - INFO - Processing: data/vct_2023/matches/team_mapping.csv
+2025-08-13 08:24:31,387 - INFO - ✅ Imported vct_2023_matches_team_mapping: 51 rows, 2 columns
+2025-08-13 08:24:31,388 - INFO - Processing: data/vct_2023/matches/win_loss_methods_count.csv
+2025-08-13 08:24:31,525 - INFO - ✅ Imported vct_2023_matches_win_loss_methods_count: 1660 rows, 14 columns
+2025-08-13 08:24:31,526 - INFO - Processing: data/vct_2023/matches/win_loss_methods_round_number.csv
+2025-08-13 08:24:31,701 - ERROR - Error importing data/vct_2023/matches/win_loss_methods_round_number.csv: too many SQL variables
+2025-08-13 08:24:31,704 - INFO - Processing: data/vct_2023/players_stats/players_stats.csv
+2025-08-13 08:24:31,842 - ERROR - Error importing data/vct_2023/players_stats/players_stats.csv: too many SQL variables
+2025-08-13 08:24:31,845 - INFO - Processing: data/vct_2024/agents/agents_pick_rates.csv
+2025-08-13 08:24:31,995 - INFO - ✅ Imported vct_2024_agents_agents_pick_rates: 24840 rows, 6 columns
+2025-08-13 08:24:31,995 - INFO - Processing: data/vct_2024/agents/maps_stats.csv
+2025-08-13 08:24:32,006 - INFO - ✅ Imported vct_2024_agents_maps_stats: 1035 rows, 7 columns
+2025-08-13 08:24:32,006 - INFO - Processing: data/vct_2024/agents/teams_picked_agents.csv
+2025-08-13 08:24:32,127 - INFO - ✅ Imported vct_2024_agents_teams_picked_agents: 15647 rows, 9 columns
+2025-08-13 08:24:32,128 - INFO - Processing: data/vct_2024/ids/players_ids.csv
+2025-08-13 08:24:32,141 - INFO - ✅ Imported vct_2024_ids_players_ids: 260 rows, 2 columns
+2025-08-13 08:24:32,143 - INFO - Processing: data/vct_2024/ids/teams_ids.csv
+2025-08-13 08:24:32,155 - INFO - ✅ Imported vct_2024_ids_teams_ids: 44 rows, 2 columns
+2025-08-13 08:24:32,155 - INFO - Processing: data/vct_2024/ids/tournaments_stages_match_types_ids.csv
+2025-08-13 08:24:32,159 - INFO - ✅ Imported vct_2024_ids_tournaments_stages_match_types_ids: 197 rows, 6 columns
+2025-08-13 08:24:32,160 - INFO - Processing: data/vct_2024/ids/tournaments_stages_matches_games_ids.csv
+2025-08-13 08:24:32,171 - INFO - ✅ Imported vct_2024_ids_tournaments_stages_matches_games_ids: 1104 rows, 9 columns
+2025-08-13 08:24:32,171 - INFO - Processing: data/vct_2024/matches/draft_phase.csv
+2025-08-13 08:24:32,202 - INFO - ✅ Imported vct_2024_matches_draft_phase: 2604 rows, 7 columns
+2025-08-13 08:24:32,202 - INFO - Processing: data/vct_2024/matches/eco_rounds.csv
+2025-08-13 08:24:32,384 - ERROR - Error importing data/vct_2024/matches/eco_rounds.csv: too many SQL variables
+2025-08-13 08:24:32,387 - INFO - Processing: data/vct_2024/matches/eco_stats.csv
+2025-08-13 08:24:32,467 - INFO - ✅ Imported vct_2024_matches_eco_stats: 11350 rows, 9 columns
+2025-08-13 08:24:32,467 - INFO - Processing: data/vct_2024/matches/kills.csv
+2025-08-13 08:24:32,884 - ERROR - Error importing data/vct_2024/matches/kills.csv: too many SQL variables
+2025-08-13 08:24:32,897 - INFO - Processing: data/vct_2024/matches/kills_stats.csv
+2025-08-13 08:24:33,047 - INFO - ✅ Imported vct_2024_matches_kills_stats: 11354 rows, 20 columns
+2025-08-13 08:24:33,048 - INFO - Processing: data/vct_2024/matches/maps_played.csv
+2025-08-13 08:24:33,057 - INFO - ✅ Imported vct_2024_matches_maps_played: 1104 rows, 5 columns
+2025-08-13 08:24:33,057 - INFO - Processing: data/vct_2024/matches/maps_scores.csv
+2025-08-13 08:24:33,087 - INFO - ✅ Imported vct_2024_matches_maps_scores: 1104 rows, 16 columns
+2025-08-13 08:24:33,087 - INFO - Processing: data/vct_2024/matches/overview.csv
+2025-08-13 08:24:33,459 - ERROR - Error importing data/vct_2024/matches/overview.csv: too many SQL variables
+2025-08-13 08:24:33,470 - INFO - Processing: data/vct_2024/matches/rounds_kills.csv
+2025-08-13 08:24:33,839 - ERROR - Error importing data/vct_2024/matches/rounds_kills.csv: too many SQL variables
+2025-08-13 08:24:33,849 - INFO - Processing: data/vct_2024/matches/scores.csv
+2025-08-13 08:24:33,865 - INFO - ✅ Imported vct_2024_matches_scores: 434 rows, 9 columns
+2025-08-13 08:24:33,865 - INFO - Processing: data/vct_2024/matches/team_mapping.csv
+2025-08-13 08:24:33,871 - INFO - ✅ Imported vct_2024_matches_team_mapping: 44 rows, 2 columns
+2025-08-13 08:24:33,871 - INFO - Processing: data/vct_2024/matches/win_loss_methods_count.csv
+2025-08-13 08:24:33,904 - INFO - ✅ Imported vct_2024_matches_win_loss_methods_count: 2208 rows, 14 columns
+2025-08-13 08:24:33,904 - INFO - Processing: data/vct_2024/matches/win_loss_methods_round_number.csv
+2025-08-13 08:24:34,107 - ERROR - Error importing data/vct_2024/matches/win_loss_methods_round_number.csv: too many SQL variables
+2025-08-13 08:24:34,111 - INFO - Processing: data/vct_2024/players_stats/players_stats.csv
+2025-08-13 08:24:34,275 - ERROR - Error importing data/vct_2024/players_stats/players_stats.csv: too many SQL variables
+2025-08-13 08:24:34,279 - INFO - Processing: data/vct_2025/agents/agents_pick_rates.csv
+2025-08-13 08:24:34,366 - INFO - ✅ Imported vct_2025_agents_agents_pick_rates: 18792 rows, 6 columns
+2025-08-13 08:24:34,367 - INFO - Processing: data/vct_2025/agents/maps_stats.csv
+2025-08-13 08:24:34,375 - INFO - ✅ Imported vct_2025_agents_maps_stats: 696 rows, 7 columns
+2025-08-13 08:24:34,375 - INFO - Processing: data/vct_2025/agents/teams_picked_agents.csv
+2025-08-13 08:24:34,447 - INFO - ✅ Imported vct_2025_agents_teams_picked_agents: 11195 rows, 9 columns
+2025-08-13 08:24:34,448 - INFO - Processing: data/vct_2025/ids/players_ids.csv
+2025-08-13 08:24:34,453 - INFO - ✅ Imported vct_2025_ids_players_ids: 286 rows, 2 columns
+2025-08-13 08:24:34,453 - INFO - Processing: data/vct_2025/ids/teams_ids.csv
+2025-08-13 08:24:34,462 - INFO - ✅ Imported vct_2025_ids_teams_ids: 50 rows, 2 columns
+2025-08-13 08:24:34,462 - INFO - Processing: data/vct_2025/ids/tournaments_stages_match_types_ids.csv
+2025-08-13 08:24:34,466 - INFO - ✅ Imported vct_2025_ids_tournaments_stages_match_types_ids: 123 rows, 6 columns
+2025-08-13 08:24:34,466 - INFO - Processing: data/vct_2025/ids/tournaments_stages_matches_games_ids.csv
+2025-08-13 08:24:34,483 - INFO - ✅ Imported vct_2025_ids_tournaments_stages_matches_games_ids: 757 rows, 9 columns
+2025-08-13 08:24:34,483 - INFO - Processing: data/vct_2025/matches/draft_phase.csv
+2025-08-13 08:24:34,497 - INFO - ✅ Imported vct_2025_matches_draft_phase: 1776 rows, 7 columns
+2025-08-13 08:24:34,498 - INFO - Processing: data/vct_2025/matches/eco_rounds.csv
+2025-08-13 08:24:34,650 - ERROR - Error importing data/vct_2025/matches/eco_rounds.csv: too many SQL variables
+2025-08-13 08:24:34,656 - INFO - Processing: data/vct_2025/matches/eco_stats.csv
+2025-08-13 08:24:34,737 - INFO - ✅ Imported vct_2025_matches_eco_stats: 8250 rows, 9 columns
+2025-08-13 08:24:34,737 - INFO - Processing: data/vct_2025/matches/kills.csv
+2025-08-13 08:24:35,036 - ERROR - Error importing data/vct_2025/matches/kills.csv: too many SQL variables
+2025-08-13 08:24:35,045 - INFO - Processing: data/vct_2025/matches/kills_stats.csv
+2025-08-13 08:24:35,144 - INFO - ✅ Imported vct_2025_matches_kills_stats: 8252 rows, 20 columns
+2025-08-13 08:24:35,144 - INFO - Processing: data/vct_2025/matches/maps_played.csv
+2025-08-13 08:24:35,151 - INFO - ✅ Imported vct_2025_matches_maps_played: 757 rows, 5 columns
+2025-08-13 08:24:35,151 - INFO - Processing: data/vct_2025/matches/maps_scores.csv
+2025-08-13 08:24:35,164 - INFO - ✅ Imported vct_2025_matches_maps_scores: 757 rows, 16 columns
+2025-08-13 08:24:35,164 - INFO - Processing: data/vct_2025/matches/overview.csv
+2025-08-13 08:24:35,421 - ERROR - Error importing data/vct_2025/matches/overview.csv: too many SQL variables
+2025-08-13 08:24:35,428 - INFO - Processing: data/vct_2025/matches/rounds_kills.csv
+2025-08-13 08:24:35,692 - ERROR - Error importing data/vct_2025/matches/rounds_kills.csv: too many SQL variables
+2025-08-13 08:24:35,699 - INFO - Processing: data/vct_2025/matches/scores.csv
+2025-08-13 08:24:35,715 - INFO - ✅ Imported vct_2025_matches_scores: 297 rows, 9 columns
+2025-08-13 08:24:35,715 - INFO - Processing: data/vct_2025/matches/team_mapping.csv
+2025-08-13 08:24:35,718 - INFO - ✅ Imported vct_2025_matches_team_mapping: 50 rows, 2 columns
+2025-08-13 08:24:35,718 - INFO - Processing: data/vct_2025/matches/win_loss_methods_count.csv
+2025-08-13 08:24:35,740 - INFO - ✅ Imported vct_2025_matches_win_loss_methods_count: 1514 rows, 14 columns
+2025-08-13 08:24:35,741 - INFO - Processing: data/vct_2025/matches/win_loss_methods_round_number.csv
+2025-08-13 08:24:35,880 - ERROR - Error importing data/vct_2025/matches/win_loss_methods_round_number.csv: too many SQL variables
+2025-08-13 08:24:35,883 - INFO - Processing: data/vct_2025/players_stats/players_stats.csv
+2025-08-13 08:24:36,014 - ERROR - Error importing data/vct_2025/players_stats/players_stats.csv: too many SQL variables
+2025-08-13 08:24:36,019 - INFO - ✅ Created import metadata table
+2025-08-13 08:24:37,292 - INFO - ✅ Created 517 indexes for better query performance
+2025-08-13 08:24:37,320 - INFO - Import process completed: 70 successful, 40 failed
+2025-08-13 08:24:37,322 - INFO - Database connection closed
