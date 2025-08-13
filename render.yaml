@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: vct-dashboard
+    env: python
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+      python scripts/import_to_sqlite.py
+    startCommand: "streamlit run app.py --server.port=$PORT --server.headless=true --server.enableCORS=false"
+    envVars:
+      - key: PYTHONPATH
+        value: /opt/render/project/src
+      - key: STREAMLIT_SERVER_HEADLESS
+        value: true
+    disk:
+      name: vct-database
+      mountPath: /opt/render/project/src
+      sizeGB: 1

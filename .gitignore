@@ -1,1 +1,22 @@
 data
+# Large database file - will be built during deployment
+vct.db
+*.db-journal
+*.db-wal
+
+# Logs
+import_log.txt
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual environment
+venv/
+.venv/
+
+# OS files
+.DS_Store
+Thumbs.db

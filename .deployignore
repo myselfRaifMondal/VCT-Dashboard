@@ -1,0 +1,32 @@
+# Large database file (will be rebuilt during deployment)
+vct.db
+*.db-journal
+
+# Large data files (included in git, but can be rebuilt)
+# Uncomment if you want faster deployments
+# data/
+
+# Development files
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.pytest_cache/
+
+# Logs
+logs/
+*.log
+import_log.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.env.local
